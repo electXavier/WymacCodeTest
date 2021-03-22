@@ -1,0 +1,62 @@
+// ------------------------------------
+// Robot B9 Command file
+// ------------------------------------
+
+// Place robot in the world
+START 0,0,-5
+//ROTATE 90,0
+
+// Wait 5 seconds with the robot statiionary at 0,0,-5
+WAIT 2
+
+// Rotate 45 degrees at 45 degrees per second
+ROTATE 45,45
+// Wait for the rotation to finish +1 second
+WAIT 2
+
+// Move in my foward direction at 1 unit per second velocity
+MOVE 1
+// Wait 10 seconds whilst the robot moves at 1 unit per second
+WAIT 10
+STOP
+
+ROTATE -90,45
+WAIT 2
+
+MOVE 2
+WAIT 5
+STOP
+
+ROTATE 90,45
+WAIT 2
+
+MOVE 1
+WAIT 10
+STOP
+
+ROTATE -90,45
+WAIT 2
+
+MOVE 2
+WAIT 5
+STOP
+
+ROTATE -135,45
+WAIT 2
+
+MOVE 1
+WAIT 7.2
+STOP
+
+MOVE 2
+WAIT 7.2
+STOP
+
+MOVE 1
+WAIT 7.2
+STOP
+
+ROTATE -90,180
+
+WAIT 10
+DESTROY
